@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <h1>Tasks</h1>
+    <p>
+        create  a HTML page and take some default values of your resume
+and read the values in different ways
+
+    </p>
+    <p>
+        Update the values using both innerHTML and innerText methods
+    </p>
+</div>
+    <div id="task1"><h1>helloyugandhar</h1></div>
+    <div class="task">
+        <b>from class</b>
+    </div>
+    <div class="task"><p>
+        from class1
+    </p></div>
+    <div class="task"><p>
+        from class2
+    </p></div>
+    <div class="task3">
+        <p>queryselector1</p>
+        <p>queryselector2</p>
+        <p>tag name form html file</p>
+    </div>
+    <div class="task4">it is from html file</div>
+    <div class="task4">2</div>
+    <div class="task4">3</div>
+    <div class="task4">4</div>
+    <div class="task4">5</div>
+    <div class="task4">6</div>
+    <div class="task4">7</div>
+    <div class="task4">8</div>
+    <div class="task4">9</div>
+    <div class="task4">10</div>
+    <script>
+        var id_ele = document.getElementById("task1")
+         let modified = id_ele.innerHTML="<h1>hey yuzi</h1>"
+        console.log(modified)
+
+
+        var class_ele = document.getElementsByClassName("task")
+        let cls = class_ele[0].innerHTML = "<i>Im form hyd</i>"
+        console.log(cls);
+        
+        var tag = document.getElementsByTagName("p")
+        console.log(tag[4].innerText);
+        let newtag = tag[4].innerHTML="<b>making bold by the tag name form js</b>"
+        console.log(newtag);
+
+        var newqry = document.querySelector(".task4")
+        console.log(newqry.innerHTML);
+        let updateqry = newqry.innerHTML="it was update by the queryselector"
+        console.log(updateqry);
+        
+        var qryall = document.querySelectorAll(".task4")
+        console.log(qryall);
+        let updteall = qryall[9].innerHTML="im update"
+        console.log(updteall);
+        
+
+        
+        
+        
+     </script>
+</body>
+</html>
